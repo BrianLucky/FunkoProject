@@ -1,0 +1,141 @@
+/* font-family: 'Lato', sans-serif; */
+:root{
+    --bg-primary: #111;
+}
+.body{
+    margin: 0;
+}
+/* HEADER */
+.header {
+    width: 100%;
+    background-color: var(--bg-primary);
+    position: sticky;
+    top: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+    height: 57px;
+}
+.header__logo {
+    display: flex;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+}
+.header__logo-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    max-width: 71px;
+    margin: 0;
+    padding: 0;
+}
+.header__logo-card-img {
+    width: 100%;
+}
+.header__menu {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+.menu__nav {
+    box-sizing: border-box;
+    display: flex;
+    /* flex-wrap: wrap; */
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+.menu__nav-li {
+    box-sizing: border-box;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    color: #f4f4f4;
+}
+.menu__nav-li :hover{
+    background-color: #fff;
+    color: #111;
+}
+.menu__nav-li-a {
+    color: inherit;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    padding: 0 10px;
+    display: none;
+    align-items: center;
+}
+@media (min-width:730px){
+    .menu__nav-li-a{
+        display: flex;
+    }
+    
+}
+.header__search {
+    box-sizing: border-box;
+    display: none;
+    flex-wrap: wrap;
+    align-items: center;
+    max-width: 250px;
+    justify-content: center;
+    background-color: #fff;
+    height: 30px;
+    border-radius: 10px;
+}
+.search__card {
+    box-sizing: border-box;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 10%;
+}
+.search__card-img {
+    width: 100%;
+}
+.search__input {
+    width: 80%;
+    border-style: none; 
+    outline: inherit;
+}
+@media (min-width:380px){
+    .header__search {
+        display: flex;
+    } 
+}
+.header__nav-icons {
+    display: none;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+@media (min-width:1000px){
+    .header__nav-icons {
+        display: flex;
+    } 
+}
+.nav-icons__card {
+    box-sizing: border-box;
+    width: 35px;
+}
+.nav-icons__card-img {
+    width: 100%;
+}
+.btn-hamburger {
+    
+}
+@media (min-width:380px) {
+    .btn-hamburger {
+        display: none;
+    }
+}
+.none{
+    display: none;
+}
+/*  */

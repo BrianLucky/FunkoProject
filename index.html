@@ -5,16 +5,66 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
     <title>FunkoProyect</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body class="body">
-    <!-- Alexander header -->
     <header class="header">
+        <a href="" class="header__logo">
+            <figure class="header__logo-card">
+                <img src="imgs-header/funko-logo.svg" alt="" class="header__logo-card-img">
+            </figure>
+        </a>
+
+        <nav class="header__menu">
+
+            <ul class="menu__nav">
+                <li class="menu__nav-li" >
+                    <a href="" class="menu__nav-li-a">PRODUCTOS</a>
+                </li>
+                <li class="menu__nav-li" >
+                    <a href="" class="menu__nav-li-a">FEATURED</a>
+                </li>
+                <li class="menu__nav-li" >
+                    <a href="" class="menu__nav-li-a">FUNATICS!</a>
+                </li>
+            </ul>
+            
+        </nav>
+
+        <form class="header__search">
+            <figure class="search__card">
+                <img src="./imgs-header/search.svg" alt="icon-search" class="search__card-img">
+            </figure>
+            <input class="search__input" type="text" name="search" placeholder="Search" id="">
+        </form>
+
+        <nav class="header__nav-icons">
+
+            <figure class="nav-icons__card">
+                <img class="nav-icons__card-img" src="./imgs-header/login.svg" alt="icon-login">
+            </figure>
+
+            <figure class="nav-icons__card">
+                <img class="nav-icons__card-img" src="./imgs-header/carrito.svg" alt="carrito de compras">
+            </figure>
+
+        </nav>
+
+        <!-- BUTTON HAMBURGESA -->
+        <div class="btn-hamburger">
+            <img src="./imgs-header/hamburger.svg" alt="icon-btn" class="btn__hamburger-open">
+            <img src="./imgs-header/x.svg" alt="icon-btn" class="btn__hamburguer-close none">
+        </div>
+
     </header>
-    <main class="main">
-        <!-- Giancarlo main__section1 -->
+
+    <main>
+
         <section class="main__section1"></section>
         <!-- Victor main__section2-->
         <section class="main__section2"></section>
