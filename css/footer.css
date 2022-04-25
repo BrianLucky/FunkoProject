@@ -1,0 +1,110 @@
+.footer__section3 {
+  width: 100%;
+  box-sizing: border-box;
+  display: grid;
+  grid-gap: 25px;
+  justify-content: center;
+  background-color: #f3f3f7;
+  grid-template-columns: repeat(auto-fit, 120px);
+  padding: 40px 5px;
+}
+.footer__section3-listOptions {
+  box-sizing: inherit;
+  display: flex;
+  flex-direction: column;
+}
+.footer__section3-title {
+  font-weight: bold;
+  font-family: "lato", sans-serif;
+  margin: 0;
+  text-align: left;
+  font-size: 14px;
+}
+.footer__section3-list {
+  list-style: none;
+  margin: 12px 0;
+  padding: 0;
+}
+.footer__section3-list-li {
+  margin: 12px 0;
+  font-family: "lato", sans-serif;
+  font-size: 13px;
+}
+@media (min-width: 450px) {
+  .footer__section3 {
+    grid-template-columns: repeat(auto-fit, 180px);
+    padding: 40px;
+  }
+  .footer__section3-title {
+    font-size: 1rem;
+  }
+  .footer__section3-list-li {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 700px) {
+  .footer__section3 {
+    grid-gap: 100px;
+  }
+}
+
+.footer {
+  width: 100%;
+}
+.footer__section1 {
+  display: flex;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  width: 100%;
+  background-color: #111;
+  padding: 10px 5%;
+}
+.footer__logo {
+  display: none;
+  box-sizing: border-box;
+  margin-right: 30px;
+}
+.footer__logo-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  max-width: 51px;
+  margin: 0;
+  padding: 0;
+}
+.footer__logo-card-img {
+  width: 100%;
+}
+.footer__social-media {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 390px;
+}
+.footer__social-media-card {
+  width: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 10px;
+}
+.footer__social-media-card-img {
+  width: 100%;
+}
+@media (min-width: 340px) {
+  .footer__logo {
+    display: flex;
+  }
+}
+@media (min-width: 450px) {
+  .footer__social-media-card {
+    width: 51px;
+  }
+  .footer__logo-card {
+    max-width: 71px;
+  }
+}
+
+/*# sourceMappingURL=footer.css.map */

@@ -1,22 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FunkoProyect</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&amp;display=swap&amp;_cacheOverride=1650861825318" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/footer.css">
 </head>
 
-<body>
-    <header>
-        <nav>
-            <li></li>
-            <li></li>
-            <li></li>
+<body class="body">
+    <header class="header">
+        <a href="" class="header__logo">
+            <figure class="header__logo-card">
+                <img src="imgs-header/funko-logo.svg" alt="" class="header__logo-card-img">
+            </figure>
+        </a>
+
+        <nav class="header__menu">
+
+            <ul class="menu__nav">
+                <li class="menu__nav-li">
+                    <a href="" class="menu__nav-li-a">PRODUCTOS</a>
+                </li>
+                <li class="menu__nav-li">
+                    <a href="" class="menu__nav-li-a">FEATURED</a>
+                </li>
+                <li class="menu__nav-li">
+                    <a href="" class="menu__nav-li-a">FUNATICS!</a>
+                </li>
+            </ul>
+            
         </nav>
+
+        <form class="header__search">
+            <figure class="search__card">
+                <img src="./imgs-header/search.svg" alt="icon-search" class="search__card-img">
+            </figure>
+            <input class="search__input" type="text" name="search" placeholder="Search" id="">
+        </form>
+
+        <nav class="header__nav-icons">
+
+            <figure class="nav-icons__card">
+                <img class="nav-icons__card-img" src="./imgs-header/login.svg" alt="icon-login">
+            </figure>
+
+            <figure class="nav-icons__card">
+                <img class="nav-icons__card-img" src="./imgs-header/carrito.svg" alt="carrito de compras">
+            </figure>
+
+        </nav>
+
+        <!-- BUTTON HAMBURGESA -->
+        <div class="btn-hamburger">
+            <img src="./imgs-header/hamburger.svg" alt="icon-btn" class="btn__hamburger-open">
+            <img src="./imgs-header/x.svg" alt="icon-btn" class="btn__hamburguer-close none">
+        </div>
+
     </header>
+
     <main>
 
         <section class="main__section1"></section>
@@ -32,11 +79,79 @@
     </main>
 
     <footer>
-        <section class="footer__section1"></section>
+        <section class="footer__section1">
+            <a href="" class="footer__logo">
+                <figure class="footer__logo-card">
+                    <img src="imgs-header/funko-logo.svg" alt="" class="footer__logo-card-img">
+                </figure>
+            </a>
+            <div class="footer__social-media">
+                <figure class="footer__social-media-card">
+                    <img src="./imgs-footer/facebook.png" alt="icon red social" class="footer__social-media-card-img">
+                </figure>
+                <figure class="footer__social-media-card">
+                    <img src="./imgs-footer/twitter.png" alt="icon red social" class="footer__social-media-card-img">
+                </figure>
+                <figure class="footer__social-media-card">
+                    <img src="./imgs-footer/instagram.png" alt="icon red social" class="footer__social-media-card-img">
+                </figure>
+                <figure class="footer__social-media-card">
+                    <img src="./imgs-footer/youtube.png" alt="icon red social" class="footer__social-media-card-img">
+                </figure>
+            </div>
+
+        </section>
         <!-- Alexander -->
         <section class="footer__section2"></section>
         <!-- Brian -->
-        <section class="footer__section3"></section>
+        <section class="footer__section3">
+            <article class="footer__section3-listOptions">
+                <h3 class="footer__section3-title">ACCOUNT</h3>
+                <ul class="footer__section3-list">
+                    <li class="footer__section3-list-li">Account</li>
+                    <li class="footer__section3-list-li">Order History</li>
+                    <li class="footer__section3-list-li">Pop Yourself</li>
+                    <li class="footer__section3-list-li">Funko Fan Club</li>
+                    <li class="footer__section3-list-li">Notification Settings</li>
+                </ul>
+            </article>
+            <article class="footer__section3-listOptions">
+                <h3 class="footer__section3-title">ASSITANCE</h3>
+                <ul class="footer__section3-list">
+                    <li class="footer__section3-list-li">Support Center</li>
+                    <li class="footer__section3-list-li">Returns Policy</li>
+                    <li class="footer__section3-list-li">Cancellation Policy</li>
+                    <li class="footer__section3-list-li">Replacement Policy</li>
+                    <li class="footer__section3-list-li">Accessibility Statement</li>
+                    <li class="footer__section3-list-li">Terms &amp; Conditions</li>
+                    <li class="footer__section3-list-li">Privacy Policy</li>
+                </ul>
+            </article>
+            <article class="footer__section3-listOptions">
+                <h3 class="footer__section3-title">ABOUT FUNKO</h3>
+                <ul class="footer__section3-list">
+                    <li class="footer__section3-list-li">About Us</li>
+                    <li class="footer__section3-list-li">Blog</li>
+                    <li class="footer__section3-list-li">Newsroom</li>
+                    <li class="footer__section3-list-li">Funko Cares</li>
+                    <li class="footer__section3-list-li">Sustainability</li>
+                    <li class="footer__section3-list-li">Investors</li>
+                    <li class="footer__section3-list-li">Careers</li>
+                </ul>
+            </article>
+            <article class="footer__section3-listOptions">
+                <h3 class="footer__section3-title">CONNECT WITH US</h3>
+                <ul class="footer__section3-list">
+                    <li class="footer__section3-list-li">Contact Us</li>
+                    <li class="footer__section3-list-li">Twitter</li>
+                    <li class="footer__section3-list-li">Instagram</li>
+                    <li class="footer__section3-list-li">Facebook</li>
+                    <li class="footer__section3-list-li">YouTube</li>
+                    <li class="footer__section3-list-li">Digital Pop!</li>
+                    <li class="footer__section3-list-li">Funko Games</li>
+                </ul>
+            </article>
+        </section>
         <!-- Alexander -->
     </footer>
 </body>
