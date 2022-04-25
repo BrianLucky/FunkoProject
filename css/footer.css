@@ -14,11 +14,11 @@
   flex-direction: column;
 }
 .footer__section3-title {
-  font-weight: bold;
   font-family: "lato", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
   margin: 0;
   text-align: left;
-  font-size: 14px;
 }
 .footer__section3-list {
   list-style: none;
@@ -26,9 +26,9 @@
   padding: 0;
 }
 .footer__section3-list-li {
-  margin: 12px 0;
   font-family: "lato", sans-serif;
-  font-size: 13px;
+  font-size: 14px;
+  margin: 12px 0;
 }
 @media (min-width: 450px) {
   .footer__section3 {
