@@ -1,7 +1,10 @@
+@use "sass:color";
 $font-family :'lato', sans-serif;
 $layout-breakpoint-small: 450px;
 $layout-breakpoint-medium: 700px;
 $font-size: 2rem;
+$footer-background-color: #f3f3f7;
+$text-color: #ffffff;
 
 @mixin text {
     font-family: $font-family;
@@ -14,12 +17,22 @@ $font-size: 2rem;
 }
 
 .footer{
+    &__section1{
+        display: flex;
+        justify-content: center;
+        box-sizing: border-box;
+        flex-wrap: wrap;
+        width: 100%;
+        background-color: #111;
+        padding: 30px 5%;
+        color: $text-color;
+    }
 
     &__section3 {
         @include d-jc-box(grid) ;
         width: 100%;
         grid-gap: 25px;
-        background-color: #f3f3f7;
+        background-color: color.scale($footer-background-color, $lightness: 20%);
         grid-template-columns: repeat(auto-fit, 120px);
         padding: 40px 5px;
     }
@@ -48,6 +61,26 @@ $font-size: 2rem;
         margin: 12px 0;
     }
 
+    &__social-media{
+        display: flex;
+        gap: 2rem;
+        flex-wrap: wrap;
+        max-width: 390px;
+    }
+
+    &__social-media-card{
+        width: 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 0 10px;
+    }
+
+    &__social-media-card-img{
+        width: 100%;        
+    }
+
     @media (min-width: $layout-breakpoint-small) {
 
         &__section3 {
@@ -56,11 +89,11 @@ $font-size: 2rem;
         }
 
         &__section3-title {
-            font-size: $font-size/2 ;
+            font-size: calc($font-size / 2) ;
         }
 
         &__section3-list-li {
-            font-size: $font-size/2;
+            font-size: calc($font-size / 2);
         }
     }
 

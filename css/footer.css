@@ -1,10 +1,20 @@
+.footer__section1 {
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  width: 100%;
+  background-color: #111;
+  padding: 30px 5%;
+  color: #ffffff;
+}
 .footer__section3 {
   display: grid;
   justify-content: center;
   box-sizing: border-box;
   width: 100%;
   grid-gap: 25px;
-  background-color: #f3f3f7;
+  background-color: #f5f5f9;
   grid-template-columns: repeat(auto-fit, 120px);
   padding: 40px 5px;
 }
@@ -30,6 +40,23 @@
   font-size: 0.88rem;
   margin: 12px 0;
 }
+.footer__social-media {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  max-width: 390px;
+}
+.footer__social-media-card {
+  width: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 10px;
+}
+.footer__social-media-card-img {
+  width: 100%;
+}
 @media (min-width: 450px) {
   .footer__section3 {
     grid-template-columns: repeat(auto-fit, 180px);
@@ -45,69 +72,6 @@
 @media (min-width: 700px) {
   .footer__section3 {
     grid-gap: 100px;
-  }
-}
-
-.footer {
-  width: 100%;
-}
-.footer__section1 {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  box-sizing: border-box;
-  flex-wrap: wrap;
-  width: 100%;
-  background-color: #111;
-  padding: 10px 5%;
-}
-.footer__logo {
-  display: none;
-  box-sizing: border-box;
-  margin-right: 30px;
-}
-.footer__logo-card {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  box-sizing: border-box;
-  max-width: 51px;
-  margin: 0;
-  padding: 0;
-}
-.footer__logo-card-img {
-  width: 100%;
-}
-.footer__social-media {
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 390px;
-}
-.footer__social-media-card {
-  width: 35px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  color: white;
-  margin: auto;
-}
-.footer__social-media-card-img {
-  width: 100%;
-}
-@media (min-width: 340px) {
-  .footer__logo {
-    display: flex;
-  }
-}
-@media (min-width: 450px) {
-  .footer__social-media-card {
-    width: 51px;
-  }
-  .footer__logo-card {
-    max-width: 71px;
   }
 }
 
