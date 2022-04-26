@@ -150,10 +150,16 @@
     background-image: url(https://i.ibb.co/4TBXKhv/funko-section5.jpg);
     background-size: cover;
     background-position: center;
-    height: 300px;
+    height: 500px;
 }
 
 .main__section5-button{    
     position: absolute;
     bottom: 1rem;    
+}
+
+.card-footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
