@@ -16,6 +16,8 @@
     align-items: center;
     padding: 0 5%;
     height: 57px;
+    height: 57px;
+    z-index: 1;
 }
 .header__logo {
     display: flex;
