@@ -1,9 +1,9 @@
 .footer__section3 {
-  width: 100%;
-  box-sizing: border-box;
   display: grid;
-  grid-gap: 25px;
   justify-content: center;
+  box-sizing: border-box;
+  width: 100%;
+  grid-gap: 25px;
   background-color: #f3f3f7;
   grid-template-columns: repeat(auto-fit, 120px);
   padding: 40px 5px;
@@ -15,7 +15,7 @@
 }
 .footer__section3-title {
   font-family: "lato", sans-serif;
-  font-size: 14px;
+  font-size: 0.88rem;
   font-weight: bold;
   margin: 0;
   text-align: left;
@@ -27,7 +27,7 @@
 }
 .footer__section3-list-li {
   font-family: "lato", sans-serif;
-  font-size: 14px;
+  font-size: 0.88rem;
   margin: 12px 0;
 }
 @media (min-width: 450px) {
