@@ -1,0 +1,24 @@
+{
+  "name": "funko",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass",
+    "sass:watch":"sass --watch css/styles.scss css/footer.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BrianLucky/FunkoProject.git"
+  },
+  "author": "Alexander MR",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BrianLucky/FunkoProject/issues"
+  },
+  "homepage": "https://github.com/BrianLucky/FunkoProject#readme",
+  "dependencies": {
+    "sass": "^1.50.1"
+  }
+}

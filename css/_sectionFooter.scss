@@ -1,0 +1,106 @@
+@use "sass:color";
+$font-family :'lato', sans-serif;
+$layout-breakpoint-small: 450px;
+$layout-breakpoint-medium: 700px;
+$font-size: 2rem;
+$footer-background-color: #f3f3f7;
+$text-color: #ffffff;
+
+@mixin text {
+    font-family: $font-family;
+    font-size: $font-size*0.44;
+}
+@mixin d-jc-box ($display:flex, $justify-content:center, $box-sizing:border-box) {
+    display: $display;
+    justify-content: $justify-content;
+    box-sizing:$box-sizing;
+}
+
+.footer{
+    &__section1{
+        display: flex;
+        justify-content: center;
+        box-sizing: border-box;
+        flex-wrap: wrap;
+        width: 100%;
+        background-color: #111;
+        padding: 30px 5%;
+        color: $text-color;
+    }
+
+    &__section3 {
+        @include d-jc-box(grid) ;
+        width: 100%;
+        grid-gap: 25px;
+        background-color: color.scale($footer-background-color, $lightness: 20%);
+        grid-template-columns: repeat(auto-fit, 120px);
+        padding: 40px 5px;
+    }
+
+    &__section3-listOptions {
+        box-sizing: inherit;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__section3-title {
+        @include text();
+        font-weight: bold;
+        margin: 0;
+        text-align: left;
+    }
+
+    &__section3-list {
+        list-style: none;
+        margin: 12px 0;
+        padding: 0;
+    }
+
+    &__section3-list-li {
+        @include text();
+        margin: 12px 0;
+    }
+
+    &__social-media{
+        display: flex;
+        gap: 2rem;
+        flex-wrap: wrap;
+        max-width: 390px;
+    }
+
+    &__social-media-card{
+        width: 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 0 10px;
+    }
+
+    &__social-media-card-img{
+        width: 100%;        
+    }
+
+    @media (min-width: $layout-breakpoint-small) {
+
+        &__section3 {
+            grid-template-columns: repeat(auto-fit, 180px);
+            padding: 40px;
+        }
+
+        &__section3-title {
+            font-size: calc($font-size / 2) ;
+        }
+
+        &__section3-list-li {
+            font-size: calc($font-size / 2);
+        }
+    }
+
+    @media (min-width: $layout-breakpoint-medium) {
+
+        &__section3 {
+            grid-gap: 100px;
+        }
+    }
+}

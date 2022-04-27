@@ -1,0 +1,250 @@
+@use 'sectionFooter';
+$bg-primary : #111;
+$bg-secondary : #effafa;
+$layout-breakpoint-small: 450px;
+$layout-breakpoint-extra-small: 340px;
+
+@mixin desktop() {
+    @media (min-width: 854px) {
+      @content;
+    }
+  }
+
+ .body{
+    margin: 0;
+}
+  .header {
+    width: 100%;
+    background-color: $bg-primary;
+    position: sticky;
+    top: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+    height: 57px;
+    z-index: 1;
+    &__logo {
+        display: flex;
+        box-sizing: border-box;
+        flex-wrap: wrap;
+    }
+    &__logo-card {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+        max-width: 71px;
+        margin: 0;
+        padding: 0;
+    }
+    &__logo-card-img {
+        width: 100%;
+    }
+    &__menu {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        height: 100%;
+    }
+}
+
+.menu__nav {
+    box-sizing: border-box;
+    display: flex;
+    /* flex-wrap: wrap; */
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.menu__nav-li {
+    box-sizing: border-box;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    color: #f4f4f4;
+    &:hover{
+        background-color: #fff;
+        color: #111;
+    }
+}
+
+.menu__nav-li-a {
+    color: inherit;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    padding: 0 10px;
+    display: none;
+    align-items: center;
+}
+
+.header__search {
+    box-sizing: border-box;
+    display: none;
+    flex-wrap: wrap;
+    align-items: center;
+    max-width: 250px;
+    justify-content: center;
+    background-color: #fff;
+    height: 30px;
+    border-radius: 10px;
+}
+.search__card {
+    box-sizing: border-box;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 10%;
+}
+.search__card-img {
+    width: 100%;
+}
+.search__input {
+    width: 80%;
+    border-style: none; 
+    outline: inherit;
+}
+@media (min-width:380px){
+    .header__search {
+        display: flex;
+    } 
+}
+.header__nav-icons {
+    box-sizing: border-box;
+    display: none;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+@media (min-width:1000px){
+    .header__nav-icons {
+        display: flex;
+    } 
+}
+.nav-icons__card {
+    box-sizing: border-box;
+    width: 35px;
+}
+.nav-icons__card-img {
+    width: 100%;
+}
+/* .btn-hamburger {
+    
+} */
+@media (min-width:380px) {
+    .btn-hamburger {
+        display: none;
+    }
+}
+.none{
+    display: none;
+}
+/*  */
+
+
+.footer {
+    width: 100%;
+
+    &__section1 {
+        display: flex;
+        box-sizing: border-box;
+        flex-wrap: wrap;
+        width: 100%;
+        background-color: $bg-primary;
+        padding: 10px 5%;
+    }
+
+    &__logo {
+        display: none;
+        box-sizing: border-box;
+        margin-right: 30px;
+    }
+
+    &__logo-card {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+        max-width: 51px;
+        margin: 0;
+        padding: 0;
+    }
+
+    &__logo-card-img {
+        width: 100%;
+    }
+
+    &__social-media {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 390px;
+    }
+
+    &__social-media-card {
+        width: 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 0 10px;
+    }
+
+    &__social-media-card-img {
+        width: 100%;
+    }
+
+    @media (min-width: $layout-breakpoint-extra-small) {
+        &__logo {
+            display: flex;
+        }
+    }
+
+    @media (min-width: $layout-breakpoint-small) {
+        &__social-media-card {
+            width: 51px;
+        }
+        &__logo-card {
+            max-width: 71px;
+        }
+    }
+}
+@media (min-width:730px){
+    .menu__nav-li-a{
+        display: flex;
+    }
+}
+
+.main__section5-container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;         
+    background-image: url(https://i.ibb.co/4TBXKhv/funko-section5.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 500px;    
+}
+
+.main__section5-button{    
+    position: absolute;
+    bottom: 1rem;    
+}
+
+.card-footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.main__section3{
+    @include desktop() {
+        background-color: $bg-secondary;
+      }
+}      
