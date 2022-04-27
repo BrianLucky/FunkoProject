@@ -1,0 +1,28 @@
+.image__container-list {
+    width: 98%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: antiquewhite;
+    align-items: center;
+    position: absolute;
+}
+
+.image__container-item {
+    background-color: #cc99ff;
+    display: flex;
+    border: solid;
+    margin: auto;
+}
+
+.image__item-image-container {
+    border: solid green;
+}
+
+.image-item-image {
+    width: 200px;
+}
+
+.image-item-tittle {
+    border: solid yellow;
+}
+
